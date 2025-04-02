@@ -681,6 +681,13 @@ body {
     grid-template-columns: 1fr;
     gap: 24px;
   }
+  .about-header h2 {
+    font-size: 28px;
+  }
+
+  .about-header p {
+    font-size: 16px;
+  }
 }
 
 /* Festivals Section */
