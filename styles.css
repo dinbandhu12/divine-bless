@@ -9,11 +9,11 @@
     --primary-color: #80011f;
     --secondary-color: #cfae45;
     --subheading-color: #2f3e92;
-    --text-color: #333;
+    --text-color: #212020;
     --btn-color: #f27474;
     --btn-hover-color: #e05f5f;
     --background-color: #fdfbef;
-    --background-color-2: #f9f3dd;
+    --background-color-2: #faf2d7;
 
     /* fonts */
     --font-family-1: 'palatino', sans-serif;
@@ -29,6 +29,7 @@
   
   body {
     font-family: 'palatino', sans-serif;
+    padding-top: 70px;
   }
 
 
@@ -43,6 +44,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     /* position: relative; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
   }
   
   .logo a {
@@ -470,7 +476,7 @@
 
 .strice {
   text-decoration: line-through;
-  color: #999;
+  color: var(--text-color);
   font-size: 14px;
   /* margin-left: 5px; */
 }
@@ -544,7 +550,7 @@
 .product-price {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #333;
+  color: var(--btn-hover-color);
 }
 
 .add-to-cart {
@@ -611,10 +617,61 @@
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+  padding: 24px;
+}
 
+.about-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background-color: #f6f8f3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  background-color: rgb(167, 94, 94);
+.about-card svg {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+.about-card h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  font-family: var(--font-family-2);
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.community-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--background-color-2);
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+  margin-top: 64px;
+}
+
+.community-info h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.community-info p {
+  font-family: var(--font-family-2);
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 480px) {  
@@ -623,3 +680,158 @@
       gap: 24px;
   }
 }
+
+
+/* Festivals Section */
+
+.festivals {
+  padding: 5rem 2rem;
+  background-color: #fff;
+}
+.festivals-header {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.festivals-header h2 {
+  font-size: 54px;
+  color: var(--primary-color);
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.festivals-header p {
+  font-size: 24px;
+  color: var(--subheading-color);
+  line-height: 1.6;
+  font-weight: 600;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 42px;
+}
+
+
+.festivals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.festivals-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fes-card-image {
+  height: 280px;
+  overflow: hidden;
+}
+
+.fes-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.festivals-card:hover .fes-card-image img {
+  transform: scale(1.1);
+}
+
+.fes-card-content {
+  padding: 20px;
+}
+
+.fes-card-content h3 {
+  font-size: 22px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.fes-card-content p {
+  font-family: var(--font-family-2);
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.festivals-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .collections {
+      padding: 4rem 1.5rem;
+  }
+  
+  .collections-header h2 {
+      font-size: 32px;
+  }
+  
+  .collections-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .collections {
+      padding: 48px 16px;
+  }
+  
+  .collections-header h2 {
+      font-size: 28px;
+  }
+  
+  .collections-header p {
+      font-size: 16px;
+  }
+  
+  .collections-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+  }
+}
+
+
+
+.pre-order-btn {
+  flex-direction: row;
+  align-items: center;
+  background-color: #F0B12B;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  display: flex;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pre-order-btn img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  filter: invert(1);
+}
+
+
+.pre-order-btn:hover {
+  background-color: #D89E22;
+}
+
+
