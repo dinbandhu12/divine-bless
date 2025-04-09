@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divine Bless - Exquisite God Statues for Every Occasion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/collections-style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="index.html"
+          ><span class="divine">Divine</span><span class="bless">Bless</span></a
+        >
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="#" class="collection-active-link">Collections</a></li>
+        <li><a href="/index.html#festivals">Festivals</a></li>
+        <li><a href="/index.html#about">About Us</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
+      <div class="actions">
+        <a href="#" class="cart-icon"
+          ><img src="/assets/icons/seach.png" alt="Search"
+        /></a>
+        <a href="#" class="cart-icon"
+          ><img src="assets/icons/user.png" alt="User"
+        /></a>
+        <a href="#" class="cart-icon"
+          ><img src="assets/icons/shopping-cart.png" alt="Cart"
+        /></a>
+      </div>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <header>
+      <div class="collections-header">
+        <h2>Our Divine Collection</h2>
+        <p>Explore our complete collection of handcrafted divine statues, perfect for your home or temple.</p>
+      </div>
+        
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search collections...">
+        <button id="searchButton"><img src="/assets/icons/seach.png" alt="Search"></button>
+      </div>
+    </header>
+
+    <main>
+        <div class="collections-grid-2" id="collectionsGrid">
+            <!-- Cards will be dynamically inserted here -->
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn" disabled>Previous</button>
+            <div id="pageIndicator">Page <span id="currentPage">1</span> of <span id="totalPages">2</span></div>
+            <button id="nextBtn">Next</button>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-contents">
+        <!-- 1st col -->
+        <div class="footer-about">
+          <h2>About Divine Bless</h2>
+          <p>
+            We are dedicated to bringing divine energy into your homes through
+            beautifully crafted statues that honor our rich cultural heritage.
+          </p>
+          <div class="footer-logo">
+            <a href="#"><img src="/assets/icons/facebook.png" alt="facebook" /></a>
+            <a href="#"><img src="/assets/icons/instagram.png" alt="instagram" /></a>
+            <a href="#"><img src="/assets/icons/twitter.png" alt="twitter" /></a>
+            <a href="#"><img src="/assets/icons/youtube.png" alt="youtube" /></a>
+          </div>
+        </div>
+
+        <!-- 2nd col -->
+        <div class="quick-links">
+          <h2>Quick Links</h2>
+          <a href="/">Home</a>
+          <a href="#">Collections</a>
+          <a href="/index.html#festivals">Festival Offers</a>
+          <a href="/index.html#about">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">FAQs</a>
+        </div>
+
+        <!-- 3rd col -->
+        <div class="services-links">
+          <h2>Customer Service</h2>
+          <a href="/contact.html">Contact Us</a>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Track Your Order</a>
+        </div>
+
+        <!-- 4th col -->
+        <div class="contacts-links">
+          <h2>Contact Us</h2>
+          <span class="ctn-add">
+            <img src="/assets/icons/location.png" alt="location">
+            123 Divine Street, Spiritual Square, Mumbai, 400001, India</span
+          >
+          <span class="ctn-nums">
+            <img src="/assets/icons/phone-call.png" alt="phone-call">
+            +91 9876543210</span
+          >
+          <span class="ctn-email">
+            <img src="/assets/icons/mail.png" alt="mail">
+            info@divinebless.com</span
+          >
+        </div>
+      </div>
+
+
+      <span class="separate-line"></span>
+      
+      <!-- footer copyright -->
+      <div class="footer-cp">
+        <span>© 2025 Divine Bless. All rights reserved.</span>
+        <span
+          >Images are for representation only. Actual product may vary slightly
+          in color and design.</span
+        >
+      </div>
+    </footer>
+
+
+
+    <script src="/js/collections.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

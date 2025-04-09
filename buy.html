@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="/css/buy.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- navbar section -->
+    <nav class="nav-bar">
+        <div class="logo">
+          <a href="/"
+            ><span class="divine">Divine</span><span class="bless">Bless</span></a
+          >
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/collections.html">Collections</a></li>
+          <li><a href="/index.html#festivals">Festivals</a></li>
+          <li><a href="/index.html#about">About Us</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+        <div class="actions">
+          <a href="#" class="cart-icon"
+            ><img src="/assets/icons/seach.png" alt="Search"
+          /></a>
+          <a href="#" class="cart-icon"
+            ><img src="/assets/icons/user.png" alt="User"
+          /></a>
+          <a href="#" class="cart-icon"
+            ><img src="/assets/icons/shopping-cart.png" alt="Cart"
+          /></a>
+        </div>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+
+      <!-- main section -->
+    <main>
+        <div class="nav-links-back">
+            <a href="collections.html"><img src="/assets/icons/left-arrow-svg.svg" class="back-arr" alt="">Back to Collections</a>
+        </div>
+        <div class="product-container">
+            <!-- Product Images Section -->
+            <div class="product-images">
+                <div class="main-image">
+                    <img id="mainImage" src="" alt="Product Image" loading="lazy">
+                </div>
+                <div class="thumbnail-container">
+                    <div class="thumbnail active" data-index="0">
+                        <img src="" alt="Thumbnail 1" loading="lazy">
+                    </div>
+                    <div class="thumbnail" data-index="1">
+                        <img src="" alt="Thumbnail 2" loading="lazy">
+                    </div>
+                    <div class="thumbnail" data-index="2">
+                        <img src="" alt="Thumbnail 3" loading="lazy">
+                    </div>
+                    <div class="thumbnail" data-index="3">
+                        <img src="" alt="Thumbnail 4" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info Section -->
+            <div class="product-info">
+                <h1 id="productTitle"></h1>
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rating-count">4.5 (128 reviews)</span>
+                </div>
+                
+                <div class="product-price">
+                    <span id="productPrice" class="current-price"></span>
+                    <span class="original-price" style="display: none;">₹<span id="originalPrice"></span></span>
+                    <span class="discount" style="display: none;">Save <span id="discountPercentage"></span>%</span>
+                </div>
+
+                <div class="product-description">
+                    <h3>About this item</h3>
+                    <p id="productDescription"></p>
+                </div>
+
+                <div class="product-details">
+                    <h3>Product Details</h3>
+                    <ul id="productDetails">
+                        <!-- Details will be inserted here -->
+                    </ul>
+                </div>
+
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity:</label>
+                        <select id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    
+                    <button class="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    
+                    <button class="buy-now-btn">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations Section -->
+        <div class="recommendations">
+            <h2>You might also like</h2>
+            <div class="recommendations-grid" id="recommendationsGrid">
+                <!-- Recommendation cards will be inserted here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-contents">
+        <!-- 1st col -->
+        <div class="footer-about">
+          <h2>About Divine Bless</h2>
+          <p>
+            We are dedicated to bringing divine energy into your homes through
+            beautifully crafted statues that honor our rich cultural heritage.
+          </p>
+          <div class="footer-logo">
+            <a href="#"><img src="/assets/icons/facebook.png" alt="facebook" /></a>
+            <a href="#"><img src="/assets/icons/instagram.png" alt="instagram" /></a>
+            <a href="#"><img src="/assets/icons/twitter.png" alt="twitter" /></a>
+            <a href="#"><img src="/assets/icons/youtube.png" alt="youtube" /></a>
+          </div>
+        </div>
+
+        <!-- 2nd col -->
+        <div class="quick-links">
+          <h2>Quick Links</h2>
+          <a href="/">Home</a>
+          <a href="/collections.html">Collections</a>
+          <a href="/index.html#festivals">Festival Offers</a>
+          <a href="/index.html#about">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">FAQs</a>
+        </div>
+
+        <!-- 3rd col -->
+        <div class="services-links">
+          <h2>Customer Service</h2>
+          <a href="/contact.html">Contact Us</a>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Track Your Order</a>
+        </div>
+
+        <!-- 4th col -->
+        <div class="contacts-links">
+          <h2>Contact Us</h2>
+          <span class="ctn-add">
+            <img src="/assets/icons/location.png" alt="location">
+            123 Divine Street, Spiritual Square, Mumbai, 400001, India</span
+          >
+          <span class="ctn-nums">
+            <img src="/assets/icons/phone-call.png" alt="phone-call">
+            +91 9876543210</span
+          >
+          <span class="ctn-email">
+            <img src="/assets/icons/mail.png" alt="mail">
+            info@divinebless.com</span
+          >
+        </div>
+      </div>
+
+      <span class="separate-line"></span>
+      
+      <!-- footer copyright -->
+      <div class="footer-cp">
+        <span>&copy; 2025 Divine Bless. All rights reserved.</span>
+        <span
+          >Images are for representation only. Actual product may vary slightly
+          in color and design.</span
+        >
+      </div>
+    </footer>
+
+    <script src="/js/buy.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
