@@ -578,6 +578,11 @@ body {
   background-color: #d89e22;
 }
 
+.add-to-cart a {
+  text-decoration: none;
+  color: white;
+}
+
 .cart-icon {
   margin-right: 5px;
 }
