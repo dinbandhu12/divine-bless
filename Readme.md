@@ -4,6 +4,10 @@
 
 A modern e-commerce website specializing in handcrafted religious statues and spiritual artifacts, built with HTML, CSS, and JavaScript.
 
+## See Live Preivew 
+
+[Click here](https://divinebless.netlify.app/) 
+
 ## Features
 - Responsive modern design optimized for all devices
 - Product catalog with detailed collections
